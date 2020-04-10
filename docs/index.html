@@ -14,7 +14,7 @@
 <body>
 <br />
 <h1 align="middle">CS184 Visual and Rendering Mods for Games </h1>
-    <h2 align="middle">Noe Cebreros, James Razo, Kevin Merino, Jesus Cebreros</h2>
+    <h2 align="middle">Kevin Merino, Noe Cebreros, James Razo, and Jesus Cebreros</h2>
 
     <div class="padded">
         <p> 
@@ -23,22 +23,27 @@
 
     <h2 align="middle">Summary</h2>
         <p>
-            Old video games created in the early and mid 2000s were some of the pioneering games that 
-            sparked the interest of many enthustiast's around the world. With the incline in graphic 
-            simulations, people tend to look back at some of the old games and they ask themselve's if such 
-            improvements could be done to their childhood games. For that purpose, our team plans to 
-            integrate improved graphics for one of our childhood games. Our team consists of Noe Cebreros, James Razo, Kevin Merino, and Jesus Cebreros.
+            Video games created in the early and mid 2000s were pioneering games that 
+            sparked interest in many enthustiast's around the world, giving birth to the game industry as we know it.
+            These video games pushed forth the desire for realistic graphics, open world maps, and advanced animations.  
+            With the incline in graphic simulations, people tend to look back at the classics and wonder what 
+            their cherished childhood games would looklike if realsed today. With that purpose, our team plans to 
+            integrate high definition graphics/ textures, and advanced lighting to one of our childhood favorites.
+            Our team consists of James Razo, Jesus Cebreros, Kevin Merino, and Noe Cebreros.
         </p>
 
     <h2 align="middle">Problem Description</h2>
         <p>
-            Most old games become unplayable due to the lack of graphics displayed on the screen. Such 
-            games include Left 4 Dead, Half Life, Portal, and The Sims. Our team strives to better the 
-            graphics of one of these four games by updating some of the textures from the in game scenes. 
-            This can be done through the use of shading tools or by creating new textures and updating them 
-            accordingly to the games scenery. We see an example image below of a scenery that could be 
-            improved by updating the surrounding. 
-
+            Most older games were limited to the technology of their day. Due to the lack of mainstream
+            heavy computational resources most games shipped with low quality graphics, minimial textures, 
+            and had to sacrifice computational hungry tasks such as ray tracing. Such 
+            games include Left 4 Dead, Half Life, Portal, and The Sims. Our team seeks to improve the 
+            graphics of one of these four games by introducing lighting techniques from CS184 (raytracing),
+            reproducing some texture layouts in HD, and possibly modifying the game engine for supersampling. 
+            We will accomplish this through the use of shading tools or by creating new textures and updating them 
+            according to the game scenery. We see an example image below of a scenery that could be 
+            improved by introducing material modeling to the vehicle, possibly higher count raytracing, ambient
+            occlusion, and higher definition textures. 
         </p>
         <div align="middle">
   <table style="width=100%">
@@ -52,43 +57,44 @@
 </div>
     <p>
         It is important to us that we generate new graphics for one of these games because we grew up 
-        playing them and we would like to replay one of them with updated graphics. The challenge seen 
-        ahead of this journey will be acquiring the correct tools to start modding one of these games, 
-        learning how to use blender or any other tool if we plan on updating some of the texture by 
-        recreating them, or learning how to shade these textures in terms of the lighting effects.
-        Implementing Ray Tracing on a video game will be hard for us because to our team this is completey 
-        new. However, we believe that we can achieve our goal of upgrading the graphics of one of our 
-        favorite video games by integrating the the parts above. We would also like to render in real time 
-        if we become knowledgeable on the topic before the due date. 
+        playing them and we would like to breathe a new life into them via updated graphics.
+        The challenges with this goal will be acquiring the correct tools to start modding one of these games; 
+        learning how to use blender, or any other tool to update texture maps. Also, learning how to modify the 
+        pre-existing rendering pipeline to introduce our own shading techniques and lighting effects.
+        We forsee video game ray tracing as specially difficult not only because this is completely new to us
+        but because it is a rather computational hungry task to accomplish in real time. 
+        However, we believe through organization and maticulous planning we can introduce the above
+        tasks into one our favorite video games. We would also like to have our game be playable, however,
+        we would at least like to be able to render in-game footage that will showcase our upgrades. 
     </p>
 
     <h2 align="middle">Goals and Deliverables</h2>
         <p> 
-            Since we plan on rendering scenery that have better quality graphics then the original video 
-            game, we will show side by side images of before and after environments. The minecraft mod 
-            shader should significantly show the difference in renders for one of these old games. We would 
-            like to present footage of the game that walks through the diffenet objects in space and 
-            portrays the new modified graphics for a thrilling throwback experience. The quality should be 
-            measured through the accuracy of the images. Whether our new modified scenery is extremely 
-            different from the original scenery. We plan on answering how much graphics have improved since 
-            the early 2000s and show how much they have improved. What our group plans on delivering is a 
-            complete modified game scenery with new texture updates and shaders. We plan on delivering an 
-            old video game with updated graphics. In order to achieve this we must accomplish learning how 
-            to use the shader mod from minecraft to integrate this into the game, learning how to use 
-            blender to create better visuals, and knowing how to begin to integrate everything together. We 
-            also intend on itegrating ray tracing such that the scenes in the video game look as close as 
-            reality as possible. If everything goes great, what we hope to deliver is a fully replayable 
-            game with the path-traced visual mods integrated into the old game. If we get ahead of 
-            schedule, we are also planning on implementing real-time ray tracing on the GPU.
+            Since we have access to the original rendering's game scenery, we will be able to showcase our 
+            improved quality graphics via a side by side image comparison of before and after environments. 
+            Our goal is to deliver footage of the game through a cinematic walkthrough of different scenes
+            that portray our modifications for a thrilling throwback experience. The quality should be 
+            measured through the accuracy of the images, video framerate and texture pixel count.
+            Our side by side comparison will ultimately answer whether our new modified scenery is a dramatic 
+            improvement from the original scenery. We plan on showcasing what modern technology allows us todo
+            to older game graphics. We expect to produce a partially modified game with breathtaking new scenery,
+            reconstruct in high quality the more visually appealing textures and inject new shaders. 
+            We expect to be unable to completely modify all game graphics in the allotted time period but we hope
+            to target the game components that result in the most dramatic and appealing results.
+            In order to accomplish this we plan to borrow techniques from shader mods used in minecraft, learn how to use 
+            blender to create better visuals, and modify the existing pipeline to integrate everything. We 
+            also intend on implementing or modifiying ray tracing to produce game scenes that look as realistic as possible.
+            If everything goes according to plan, we hope to deliver an in-game footage with path-traced HD texture scenes.
+            If we are able to get ahead of schedule, we plan on implementing real-time ray tracing on the GPU to achieve
+            a fully playable remastered videogame.
         </p>
 
     <h2 align="middle">Schedule</h2>
         <p>
             <strong>WEEK ONE:</strong>
             <ul>
-                <li>Learn were we will get the source code for the game</li>
-                <li>Learn how we plan on using blender for the texture</li>
-                <li>Download source code and figure out what it takes to mod games </li>
+                <li>Obtain the source code for the game, and produce an outline of the existing graphics pipeline.</li>
+                <li>Learn to use blender to remake texture maps.</li>
                 <li>Look into ambient occlusion</li>
                 <li>Research the different ways on how we plan on tackling this project such as 
                 implementing ray tracing </li>
@@ -98,24 +104,26 @@
 
             <strong>WEEK TWO:</strong>
             <ul>
-                <li>Start integrating the shaders for scenes </li>
-                <li>Begin to integrate ambient occlusion for the lighting </li>
-                <li>If using blender for texture, hopefully have some finished products</li>
+                <li>Start integrating the shaders for scenes. </li>
+                <li>Begin to integrate ambient occlusion for lighting. </li>
+                <li>Begin to reconstruct some texture maps in shader. </li>
             </ul>
 
             <br>
             <strong>WEEK THREE:</strong>
             <ul>
-                <li>Have some type of scenery coming along</li>
-                <li>Look into fully path-traced visual mods</li>
+                <li>Document results of ambient occlusion with in-game scenes. </li>
+                <li>Inject our own shader mods to the game. </li>
+                <li>Produce texture maps and update the game to use these maps. </li>
+                <li>learn how raytracing is done in-game and possible improvements.</li>
             </ul>
 
             <br>
             <strong>WEEK FOUR:</strong>
             <ul>
-                <li>Have a finished product</li>
-                <li>Fix any issues we currently have</li>
-                <li>Integrated fully path-traced visual mods?</li>
+                <li>Build final result footage showcasing our best scenes. </li>
+                <li>Fix any issues we that may have arised.</li>
+                <li>Integrated real-time GPU path-tracing? </li>
             </ul>
 
         </p>
@@ -148,7 +156,4 @@
 </div>
 </body>
 </html>
-
-
-
 
