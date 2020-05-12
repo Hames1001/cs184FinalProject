@@ -13,80 +13,198 @@
 </head>
 <body>
 <br />
-<h1 align="middle">CS184 Animated Robot and Kinematics</h1>
+<h1 align="middle">CS184 3D Robot/Skeleton Control : </h1>
     <h2 align="middle">Noe Cebreros, James Razo, Kevin Merino, Jesus Cebreros</h2>
 
     <div class="padded">
-
-
-    <h2 align="middle">Abstract</h2>
-        <p> Something that each one of our team members had in common was that we all wanted 
-            to take CS184 because we wanted to learn how to create video games and learn the 
-            technology behind them. That was the main reason why we decided to try and create 
-            a video game for our final project for this class. What we created is a 2D animated game for which you can move around freely, jump, and shoot. Our game only has two robot characters which were inspired from Star Wars. The two robots were created and animated using Blender while the game was created in Unity. In order to accomplish this project we had to learn how to use Blender and create characters from shapes. In addition, we also had to learn how to create a skeleton body, and how to connect the joints so that our kinematics worked on our robot and made him move in a realistic way. Furthermore, we also had to animate the walk that our robot implemented. We then went on to implement the inverse kinematics that our robot would implement. We made sure that our robot would follow our mouse with its head and arm while allowing our robot to shoot in the direction that we wanted using kinematics. Lasty, we implemented a background and scenery for our game.
-        </p>
-
-    <h2 align="middle">Technical Approach</h2>
-
-    <ul>
-        <li><b>Approach: </b></li>
-            <p>
-                In the beginning, starting this project was a very daunting task. None of our team members had ever done a project like this and we knew very little about the tools we could use. Our first approach was to learn what tools exists that could help us create and animate a video game. After some research we learned that Unity was the platform we needed to use to create a video game. We then learned that we could create our animated robot through many different programs such as Maya, Natron, Sculptris and many more. However, we decided to use Blender partly because of the huge community that contributes to it. We figured that if we needed to debug something there would be more support for Blender than the others. After we figured out which technologies we were going to use, the next step was to start using them. We started off by first creating the robots for our game. At first, we did not know how to use Blender but after reading some of the commands we quickly started picking up how to add detail to the characters. In order to create the robots, we looked at images from google of robots to be inspired. We actually based our creations from some of the robots from Star Wars. The images below show a side by side comparison of one of the robots that we created and got inspired from.
-
-
-
-                  <div align="middle">
-                  <table style="width=100%">
-                    <tr>
-                      <td>
-                        <img src="images/inspired.png" align="middle" width="400px"/>
-                        <figcaption align="middle">Inspiration</figcaption>
-                      </td>
-                      <td>
-                        <img src="images/robot2.png" align="middle" width="400px"/>
-                        <figcaption align="middle">Our Creation</figcaption>
-                      </td>
-                    </tr>
-                    <br>
-                    <tr>
-                    </tr>
-                  </table>
-                </div>
-
-
-            </p>
-        <li><b>Problems Encountered: </b></li>
-            <p>
-                My name is Noe Cebreros
-            </p>
-        <li><b>Lessons Learned: </b></li>
-            <p>
-                My name is Noe Cebreros
-            </p>
         
+    <h2>Milestone Deliverables</h2>
+    <h2 align="middle">Update from Proposal</h2>
+    <p>
+        We have changed our subject from visual/rendering mods for games to 3D Robot/Skeleton Control based on the feedback
+        from our TA. With that said we will now move on to the brief summary of progress and work. Towards the bottom,
+        our previous project proposal is still intact as we were unsure if we still needed to host it. 
+    </p>
+    <h2 align="middle">Brief Progress</h2>
+    <p>
+        With our switch to 3D skeleton control and inverse kinematics we have so far finished a model of our robot that we will be 
+        using throughout the process. The robot we have created is far from perfect but as the deadline nears we will be modifing the 
+        body to create a somewhat cartoonish robot. The name we have given our robot is Beetle Juice and he was deigned through blender
+        and many tutorials. With our model almost complete we have other work in progress which is a snippet of code for the control 
+        of joints and the rigs for the robot. For our selection on control we are currently following the CCD algorithm for 2D 
+        movement while we work on figuring out the rotation part for the animation. I would say that we are somewhat behind schedule 
+        based on what we have so far but we should have the rigging done on the body by the end of this week and have an idea of 
+        animation ready after the rigging. With that said we have an updated schedule for the due date.  
+    </p>
+    <h2 align="middle">Presentation Slides and Narration</h2>
+    <p>
+        <ul>
+            <li> <a href="https://docs.google.com/presentation/d/1vF-nsQebCCzqUysATbykOvp9TwyuTF3p7m9Qov0qFS8/edit#slide=id.gc6f75fceb_0_0">Slides </a>
+             </li>
+             <li> <a href="https://www.youtube.com/watch?v=Aj8EKbJNkL0&feature=youtu.be">Narration with slides </a> </li>
+        </ul>
 
-    </ul>
+    </p>
+    <h2 align="middle">Updated Schedule</h2>
+    <p>
+        <strong>WEEK THREE:</strong>
+        <ul>
+            <li>Complete the rigging for the body</li>
+            <li>Modify some parts of the robot</li>
+            <li>Make progress on the code</li>
+            <li>Once rigging is done, export robot from blender into unity</li>
+            <li>Introduce some of the keyframes</li>
+        </ul>
+        <br>
+        <strong>WEEK FOUR:</strong>
+        <ul>
+            <li>Have an animation ready from the code</li>
+            <li>If animation goes great, one of our members will try to create a background scenery</li>
+            <li>Interactions between our robot and other objects?</li>
+        </ul>
+    </p>
+
+
+    
+
+
+
+
+
+    <h2>Project Proposal</h2>
+
+    <h2 align="middle">Summary</h2>
         <p>
-            
-
+            Video games created in the early and mid 2000s were pioneering games that 
+            sparked interest in many enthustiast's around the world, giving birth to the game industry as we know it.
+            These video games pushed forth the desire for realistic graphics, open world maps, and advanced animations.  
+            With the incline in graphic simulations, people tend to look back at the classics and wonder what 
+            their cherished childhood games would looklike if realsed today. With that purpose, our team plans to 
+            integrate high definition graphics/ textures, and advanced lighting to one of our childhood favorites.
+            Our team consists of James Razo, Jesus Cebreros, Kevin Merino, and Noe Cebreros.
         </p>
 
+    <h2 align="middle">Problem Description</h2>
+        <p>
+            Most older games were limited to the technology of their day. Due to the lack of mainstream
+            heavy computational resources most games shipped with low quality graphics, minimial textures, 
+            and had to sacrifice computational hungry tasks such as ray tracing. Such 
+            games include Left 4 Dead, Half Life, Portal, and The Sims. Our team seeks to improve the 
+            graphics of one of these four games by introducing lighting techniques from CS184 (raytracing),
+            reproducing some texture layouts in HD, and possibly modifying the game engine for supersampling. 
+            We will accomplish this through the use of shading tools or by creating new textures and updating them 
+            according to the game scenery. We see an example image below of a scenery that could be 
+            improved by introducing material modeling to the vehicle, possibly higher count raytracing, ambient
+            occlusion, and higher definition textures. 
+        </p>
+        <div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/halfLife.png" align="middle" width="400px"/>
+        <figcaption align="middle">Half Life old gameplay taken online</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+    <p>
+        It is important to us that we generate new graphics for one of these games because we grew up 
+        playing them and we would like to breathe a new life into them via updated graphics.
+        The challenges with this goal will be acquiring the correct tools to start modding one of these games; 
+        learning how to use blender, or any other tool to update texture maps. Also, learning how to modify the 
+        pre-existing rendering pipeline to introduce our own shading techniques and lighting effects.
+        We forsee video game ray tracing as specially difficult not only because this is completely new to us
+        but because it is a rather computational hungry task to accomplish in real time. 
+        However, we believe through organization and maticulous planning we can introduce the above
+        tasks into one our favorite video games. We would also like to have our game be playable, however,
+        we would at least like to be able to render in-game footage that will showcase our upgrades. 
+    </p>
 
     <h2 align="middle">Goals and Deliverables</h2>
         <p> 
+            Since we have access to the original rendering's game scenery, we will be able to showcase our 
+            improved quality graphics via a side by side image comparison of before and after environments. 
+            Our goal is to deliver footage of the game through a cinematic walkthrough of different scenes
+            that portray our modifications for a thrilling throwback experience. The quality should be 
+            measured through the accuracy of the images, video framerate and texture pixel count.
+            Our side by side comparison will ultimately answer whether our new modified scenery is a dramatic 
+            improvement from the original scenery. We plan on showcasing what modern technology allows us todo
+            to older game graphics. We expect to produce a partially modified game with breathtaking new scenery,
+            reconstruct in high quality the more visually appealing textures and inject new shaders. 
+            We expect to be unable to completely modify all game graphics in the allotted time period but we hope
+            to target the game components that result in the most dramatic and appealing results.
+            In order to accomplish this we plan to borrow techniques from shader mods used in minecraft, learn how to use 
+            blender to create better visuals, and modify the existing pipeline to integrate everything. We 
+            also intend on implementing or modifiying ray tracing to produce game scenes that look as realistic as possible.
+            If everything goes according to plan, we hope to deliver an in-game footage with path-traced HD texture scenes.
+            If we are able to get ahead of schedule, we plan on implementing real-time ray tracing on the GPU to achieve
+            a fully playable remastered videogame.
+        </p>
+
+    <h2 align="middle">Schedule</h2>
+        <p>
+            <strong>WEEK ONE:</strong>
+            <ul>
+                <li>Obtain the source code for the game, and produce an outline of the existing graphics pipeline.</li>
+                <li>Learn to use blender to remake texture maps.</li>
+                <li>Look into ambient occlusion</li>
+                <li>Research the different ways on how we plan on tackling this project such as 
+                implementing ray tracing </li>
+            </ul>
+
+            <br>
+
+            <strong>WEEK TWO:</strong>
+            <ul>
+                <li>Start integrating the shaders for scenes. </li>
+                <li>Begin to integrate ambient occlusion for lighting. </li>
+                <li>Begin to reconstruct some texture maps in shader. </li>
+            </ul>
+
+            <br>
+            <strong>WEEK THREE:</strong>
+            <ul>
+                <li>Document results of ambient occlusion with in-game scenes. </li>
+                <li>Inject our own shader mods to the game. </li>
+                <li>Produce texture maps and update the game to use these maps. </li>
+                <li>learn how raytracing is done in-game and possible improvements.</li>
+            </ul>
+
+            <br>
+            <strong>WEEK FOUR:</strong>
+            <ul>
+                <li>Build final result footage showcasing our best scenes. </li>
+                <li>Fix any issues we that may have arised.</li>
+                <li>Integrated real-time GPU path-tracing? </li>
+            </ul>
 
         </p>
 
-
     <h2 align="middle">Resources</h2>
         <p>
+            For starters we will be looking into the Steam community for any tips on mods for games. We 
+            will also look at the Nvidia webpage link provided to us and read some papers on ray tracing 
+            techniques. This is really new to us so we are trying to figure out the direction for our 
+            course of action.
+
+            <ul>
+                <li> <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=621583093">Steam 
+                community </a> </li>
+
+
+                <li> <a href="https://www.nvidia.com/en-us/geforce/news/quake-ii-rtx-june-6-release-date/">
+                Nvidia link provided to us 
+                </a> </li>
+
+                <li> <a href="https://pdfs.semanticscholar.org/a2e7/4e3b816aac2790b0a3eada9375d237cd4493.pdf
+                    ">Recent developments in raytracing for video games
+                </a> </li>
+                
+
+            </ul>
 
         </p>
 
 </div>
 </body>
 </html>
-
-
-
-
