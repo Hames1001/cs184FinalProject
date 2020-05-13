@@ -82,6 +82,10 @@
                   <table style="width=100%">
                     <tr>
                       <td>
+                        <img src="images/beetle.png" align="middle" width="350px"/>
+                        <figcaption align="middle">Our Second Robot</figcaption>
+                      </td>
+                      <td>
                         <img src="images/robot1.png" align="middle" width="400px"/>
                         <figcaption align="middle">Skeleton</figcaption>
                       </td>
@@ -98,6 +102,13 @@
 
                 <a href="https://www.youtube.com/watch?v=2eCgjL1CBhw"> Walking Animation</a>
 
+                <br></br>
+                After gathering all of the components from above it was now time to program our figure to perform a couple of actions.
+                This included walking, shooting, and jumping. By using Unity we were able to simulate, standing and walking animation for our 
+                robot by looping the animation in the direction it was heading towards. Our robot Beetle Juice was capable of moving 
+                left, right, and in depth towards the screen. Once our robots environment was done, we implemented IK. The
+                right arm and the head move in the direction of the mouse. The closer the mouse is to the robot, its arm and head will
+                rotate. The further the mouse is from the robot, the arm and head will lay horizontal across the screen. We then implemented shooting by making a prefab of a bullet and then writting a script so that if the bullet hits a sphere, it would disappear with the sphere. If it doesn't then it will go straight out of the camera screen and disappear depending on the existance length we give the bullet.
             </p>
         <li><b>Problems Encountered: </b></li>
             <p>
@@ -109,8 +120,7 @@
                 because Blender has a lot of shortcuts when using an actual mouse, so learning how to use Blender without a touchpad 
                 was very hard. Another problem we had was implementing the skeleton correctly. In the beginning, our skeleton did 
                 not work because we did not connect the correct joints together, but after many tries we were able to create a 
-                skeleton that behaved like we wanted it too.
-
+                skeleton that behaved like we wanted it too. After we finally learned to model in Blender we had to learn how to use unity to be able to create a small game. This was the hardest part because none of use knew how to use unity. And of course there was also logistical problems since we had to work on the project remotely it was hard to coordinate with our team members since none of us was particularly good at working in teams so many times we ended up working in the same thing instead of having compartenalized the project better. For dropping the spheres we simply generated random spheres using a Prefab and a script attatched to the main camera object.
             </p>
         <li><b>Lessons Learned: </b></li>
             <p>
@@ -119,7 +129,7 @@
                 because we present the user with a sequence of still images right after another, so that the user can see them as a 
                 continuous moving image. This has taught us how to create smooth and lifelike animations. Essentially we just have to 
                 create enough frames to depict the character as moving. We also learned the importance of creating a good skeleton for 
-                our animations because without a skeleton the character cannot move.
+                our animations because without a skeleton the character cannot move. Of course we learned unity and C# which none of us knew before and a bit of inverse kinematics. But aside from the technical aspects we also got experience working as a team.
             </p>
 
     </ul>
@@ -127,7 +137,8 @@
 
     <h2 align="middle">Results</h2>
       <p> 
-
+        <a href="https://youtu.be/1RPEQ2Orj44">Video Demo</a>
+    
       </p>
 
 
@@ -162,18 +173,20 @@
           <br></br>
 
           <li>
-            <b>James Razo:</b> 
+            <b>James Razo:</b> Creation of the robot's head and torso. Contributed to the game mechanics of the characters movement 
+            through Unity and researched different camera angles for the game. Helped with the overall final report and slide 
+            presentations. 
           </li>
           <br></br>
+
+          <li>
+            <b>Jesus Cebreros:</b> Creation of the legs of the robot and abiliity of the robot to shoot bullets. Added the backgroun and implemented the dropping spheres to give the game an objective which was to move up to the Blue platform without getting killed. Worked on the physics of the game such as the robot only being able to jump when on the ground and being destroyed when hit by a sphere. Also worked on implementing the rigging of the robot. Also contributed to the slides presentation and final report.
+          </li></br>
 
           <li>
             <b>Kevin Merino:</b> 
           </li>
-          <br></br>
-
-          <li>
-            <b>Jesus Cebreros:</b>
-          </li>
+          <br>
           
         </ul>
 
