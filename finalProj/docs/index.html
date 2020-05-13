@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-s<html 
+    xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" l<head> <style>   We were inspired to do this by looking over the project ideas 
+    div.padded {  
+      padding-top: 0px;  
+      padding-right: 100px;  
+      padding-bottom: 0.25in;  
+      padding-left: 100px;  
+    }  
+  </style> 
+<title>Final Project  |  CS 184</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<br />
+<h1 align="middle">CS184 Animated Robot and Kinematics</h1>
+    <h2 align="middle">Noe Cebreros, James Razo, Kevin Merino, Jesus Cebreros</h2>
+
+    <div class="padded">
+
+
+    <h2 align="middle">Abstract</h2>
+        <p> Something that each one of our team members had in common was that we all wanted 
+            to take CS184 because we wanted to learn how to create video games and learn the 
+            technology behind them. That was the main reason why we decided to try and create 
+            a video game for our final project for this class. What we created is a 2D animated game for which you can move around 
+            freely, jump, and shoot. Our game only has two robot characters which were inspired from Star Wars. The two robots were 
+            created and animated using Blender while the game was created in Unity. In order to accomplish this project we had to 
+            learn how to use Blender and create characters from shapes. In addition, we also had to learn how to create a skeleton 
+            body, and how to connect the joints so that our kinematics worked on our robot and made him move in a realistic way. 
+            Furthermore, we also had to animate the walk that our robot implemented. We then went on to implement the inverse 
+            kinematics that our robot would implement. We made sure that our robot would follow our mouse with its head and arm while 
+            allowing our robot to shoot in the direction that we wanted using kinematics. Lasty, we implemented a background and 
+            scenery for our game.
+
+        </p>
+
+    <h2 align="middle">Technical Approach</h2>
+
+    <ul>
+        <li><b>Approach: </b></li>
+            <p>
+                In the beginning, starting this project was a very daunting task. None of our team members had ever done a project 
+                like this and we knew very little about the tools we could use. Our first approach was to learn what tools exist that 
+                could help us create and animate a video game. After some research we learned that Unity was the platform we needed to 
+                use to create a video game. We then learned that we could create our animated robot through many different programs 
+                such as Maya, Natron, Sculptris and many more. However, we decided to use Blender partly because of the huge community 
+                that contributes to it. We figured that if we needed to debug something there would be more support for Blender than 
+                the others. After we figured out which technologies we were going to use, the next step was to start using them. We 
+                started off by first creating the robots for our game. At first, we did not know how to use Blender but after reading 
+                some of the commands we quickly started picking up how to add detail to the characters. In order to create the robots, 
+                we looked at images from google of robots to be inspired. We actually based our creations from some of the robots from 
+                Star Wars. The images below shows a side by side comparison of one of the robots that we created and what we based it 
+                off of.
+
+
+                  <div align="middle">
+                  <table style="width=100%">
+                    <tr>
+                      <td>
+                        <img src="images/Inspired.png" align="middle" width="320px"/>
+                        <figcaption align="middle">Inspiration</figcaption>
+                      </td>
+                      <td>
+                        <img src="images/robot2.png" align="middle" width="400px"/>
+                        <figcaption align="middle">Our Creation</figcaption>
+                      </td>
+                    </tr>
+                    <br>
+                    <tr>
+                    </tr>
+                  </table>
+                </div>
+
+                The next thing we did was to create the skeleton of our robots. We created the bones for the head, arms, legs and 
+                body. We also connected the joints so that the inverse kinematics could work. Essentially we connected the legs to the 
+                pelvis bone so that the body could move realistically when the legs moved. The arms were connected hierarchically by 
+                having the shoulder be the father of the upper arm, the upper arm the father of the lower arm, and the lower arm the 
+                father of the hand. The image below shows the skeleton and joints for our robot.
+
+                <div align="middle">
+                  <table style="width=100%">
+                    <tr>
+                      <td>
+                        <img src="images/beetle.png" align="middle" width="350px"/>
+                        <figcaption align="middle">Our Second Robot</figcaption>
+                      </td>
+                      <td>
+                        <img src="images/robot1.png" align="middle" width="400px"/>
+                        <figcaption align="middle">Skeleton</figcaption>
+                      </td>
+                    </tr>
+                    <br>
+                    <tr>
+                    </tr>
+                  </table>
+                </div>
+
+                The next step was to animate the walk of our character. We did this by capturing multiple frames of our character in a 
+                different position. We captured about 25 frames and let it loop to depict our robot walking. Below is a link to a 
+                video of our animated walk. <br></br>
+
+                <a href="https://www.youtube.com/watch?v=2eCgjL1CBhw"> Walking Animation</a>
+
+                <br></br>
+                After gathering all of the components from above it was now time to program our figure to perform a couple of actions.
+                This included walking, shooting, and jumping. By using Unity we were able to simulate, standing and walking animation for our 
+                robot by looping the animation in the direction it was heading towards. Our robot Beetle Juice was capable of moving 
+                left, right, and in depth towards the screen. Once our robots environment was done, we implemented IK. The
+                right arm and the head move in the direction of the mouse. The closer the mouse is to the robot, its arm and head will
+                rotate. The further the mouse is from the robot, the arm and head will lay horizontal across the screen. We then implemented shooting by making a prefab of a bullet and then writting a script so that if the bullet hits a sphere, it would disappear with the sphere. If it doesn't then it will go straight out of the camera screen and disappear depending on the existance length we give the bullet.
+            </p>
+        <li><b>Problems Encountered: </b></li>
+            <p>
+                The biggest problem we had was that at first we wanted to work on a different project. We wanted to improve the 
+                graphics of an old video game such as Left 4 dead and also add mods to it. After receiving feedback from our TA we 
+                decided that it would be best to work on a more doable project. This set us back a few weeks since we had to 
+                essentially start over. A problem we encountered when actually working on the current project was that when using 
+                Blender some of our members did not have a mouse to use, so they had to use there laptop touchpad. This was a problem 
+                because Blender has a lot of shortcuts when using an actual mouse, so learning how to use Blender without a touchpad 
+                was very hard. Another problem we had was implementing the skeleton correctly. In the beginning, our skeleton did 
+                not work because we did not connect the correct joints together, but after many tries we were able to create a 
+                skeleton that behaved like we wanted it too. After we finally learned to model in Blender we had to learn how to use unity to be able to create a small game. This was the hardest part because none of use knew how to use unity. And of course there was also logistical problems since we had to work on the project remotely it was hard to coordinate with our team members since none of us was particularly good at working in teams so many times we ended up working in the same thing instead of having compartenalized the project better. For dropping the spheres we simply generated random spheres using a Prefab and a script attatched to the main camera object.
+            </p>
+        <li><b>Lessons Learned: </b></li>
+            <p>
+                Working on this project taught us so much about animation and game development. We now know how to develop characters 
+                and animate them so that they move in a realistic way. We learned that animation is basically an optical illusion 
+                because we present the user with a sequence of still images right after another, so that the user can see them as a 
+                continuous moving image. This has taught us how to create smooth and lifelike animations. Essentially we just have to 
+                create enough frames to depict the character as moving. We also learned the importance of creating a good skeleton for 
+                our animations because without a skeleton the character cannot move. Of course we learned unity and C# which none of us knew before and a bit of inverse kinematics. But aside from the technical aspects we also got experience working as a team.
+            </p>
+
+    </ul>
+
+
+    <h2 align="middle">Results</h2>
+      <p> 
+        <a href="https://youtu.be/1RPEQ2Orj44">Video Demo</a>
+    
+      </p>
+
+
+    <h2 align="middle">References</h2>
+      <ul>
+        <li>
+          <a href="https://docs.blender.org/manual/en/latest/interface/keymap/introduction.html">Blender Tutorial</a>
+        </li>
+
+        <li>
+          <a href="https://docs.unity3d.com/Manual/UnityHotkeys.html">Unity Tutorial</a>
+        </li>
+
+        <li>
+          <a href="https://www.blendersecrets.org/secrets/how-to-use-blender">blendersecrets.org/secrets/how-to-use-blender</a>
+        </li>
+
+        <li>
+          <a href="https://oldetinkererstudio.com/lets-animate-intro-to-animation-blender-2-8-tutorial/">oldetinkererstudio.com/
+          lets-animate-intro-to-animation-blender-2-8-tutorial/</a>
+        </li>
+      </ul>
+
+    <h2 align="middle">Contributions</h2>
+      <p>
+        <ul>
+          <li>
+            <b>Noe Cebreros:</b> Created the killer dog robot that was inspired from Star Wars, contributed to the creation of the 
+            arms of the human like robot and created its skeleton structure. Also created the walk animation of our robot. Contributed 
+            to the slides, presentation, and final report.
+          </li>
+          <br></br>
+
+          <li>
+            <b>James Razo:</b> Creation of the robot's head and torso. Contributed to the game mechanics of the characters movement 
+            through Unity and researched different camera angles for the game. Helped with the overall final report and slide 
+            presentations. 
+          </li>
+          <br></br>
+
+          <li>
+            <b>Jesus Cebreros:</b> Creation of the legs of the robot and abiliity of the robot to shoot bullets. Added the backgroun and implemented the dropping spheres to give the game an objective which was to move up to the Blue platform without getting killed. Worked on the physics of the game such as the robot only being able to jump when on the ground and being destroyed when hit by a sphere. Also worked on implementing the rigging of the robot. Also contributed to the slides presentation and final report.
+          </li></br>
+
+          <li>
+            <b>Kevin Merino:</b> 
+          </li>
+          <br>
+          
+        </ul>
+
+      </p>
+
+</div>
+</body>
+</html>
